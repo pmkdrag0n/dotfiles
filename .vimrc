@@ -186,5 +186,7 @@ set guioptions-=L  "remove left-hand scroll bar
 " => Removes pipes | that act as seperators on splits
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set fillchars+=vert:\ 
+" Restore cursor
+au VimLeave * set guicursor=a:block-blinkon0
 
 
