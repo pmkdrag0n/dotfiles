@@ -54,12 +54,18 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
-                "name": "Ubuntu-18.04",
+                "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
-                "colorScheme": "One Half Dark",
+		"colorScheme": "One Half Dark",
                 "fontFace" : "MesloLGS NF"
+            },
+            {
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -83,11 +89,17 @@
 
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
-
+	// close split
+	{ "command": "closePane", "keys": "ctrl+w" },
+	{ "command": "nextTab", "keys": "ctrl+tab" },
+	{ "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+down" },
+	{ "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+left" },
+	{ "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+right" },
+	{ "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+up" },
         // Press Alt+Shift+D to open a new pane.
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+d" }
     ]
 }
