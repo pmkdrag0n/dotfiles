@@ -1,5 +1,6 @@
-/**
- ###########################################
+#!/bin/bash
+
+###########################################
 #	Made by
 #       _                              _        
 #      (_)                            (_)       
@@ -12,15 +13,9 @@
 #		https://github.com/simonvic/dotfiles
 
 ###########################################
-*/
- 
-configuration {
-	show-icons: true;
-	drun-display-format: "{name}";
-	sidebar-mode: false;
-	theme: "~/.config/rofi/themes/simonvic.rasi";
-	display-window: "缾";
-	display-run: "$";
-	display-ssh: "~#";
-	display-drun: "§";
-}
+
+source ~/.config/i3/scripts/redshift.sh
+
+if [ "$REDSHIFT_STATUS" = "on" ]; then
+	redshift -O "$REDSHIFT_TEMP"
+fi

@@ -1,5 +1,4 @@
-/**
- ###########################################
+###########################################
 #	Made by
 #       _                              _        
 #      (_)                            (_)       
@@ -12,15 +11,6 @@
 #		https://github.com/simonvic/dotfiles
 
 ###########################################
-*/
- 
-configuration {
-	show-icons: true;
-	drun-display-format: "{name}";
-	sidebar-mode: false;
-	theme: "~/.config/rofi/themes/simonvic.rasi";
-	display-window: "缾";
-	display-run: "$";
-	display-ssh: "~#";
-	display-drun: "§";
-}
+
+export REDSHIFT_STATUS=off
+export REDSHIFT_TEMP=3400
